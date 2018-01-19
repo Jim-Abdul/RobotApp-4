@@ -11,8 +11,46 @@
 
 <body>
   <div id="root">
-    <!-- insert your tags here -->
+    <div id="toolbar">
+      <button onclick="turn('left')">TURN-LEFT</button>
+      <button onclick="move()">MOVE</button>
+      <button onclick="turn('right')">TURN-RIGHT</button>
+    </div>
+    <div id="board">
+      <table id='table'>
+        <tr>
+          <td>T</td>
+          <td>T</td>
+          <td></td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>T</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>W</td>
+        </tr>
+      </table>
+    </div>
   </div>
+  <script>
+    document.getElementsByTagName('TR')[3].getElementsByTagName('TD')[0].innerHTML = 'R' + '↑' ;
+  </script>
+ <script src="myFormat.js">
+   </script>
+
 </body>
 
 </html>
